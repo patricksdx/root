@@ -170,6 +170,9 @@ header {
   margin: auto 5px;
   color: white;
 }
+a .fa-bars {
+  display: none;
+}
 
 /* FIJO */
 .fijo {
@@ -285,6 +288,9 @@ footer {
     background-color: #87372f;
     text-align: center;
     top: 50px;
+  }
+  a .fa-bars {
+    display: inline;
   }
 }
 
