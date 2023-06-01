@@ -126,7 +126,7 @@ p {
 /* BARRA DE NAVEGACION */
 header {
   width: 80%;
-  height: 50px;
+  height: 65px;
   margin: 0 auto;
   background-color: rgba(56, 10, 10, 0.9);
   display: flex;
@@ -287,7 +287,7 @@ footer {
     width: 100%;
     background-color: #87372f;
     text-align: center;
-    top: 50px;
+    top: 65px;
   }
   a .fa-bars {
     display: inline;
