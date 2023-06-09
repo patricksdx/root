@@ -23,12 +23,9 @@ main {
 }
 
 section {
-  width: 90%;
-  height: 100%;
   overflow: hidden;
-  margin: 10px auto;
+  background-color: #ff7f68;
   padding: 5%;
-  background-color: rgba(61, 38, 19, 0.8);
   text-align: center;
 }
 
@@ -60,13 +57,36 @@ section {
   margin: 0px 0px 25px 0px;
 }
 
-#intro p {
-  text-shadow: 5px 5px 5px rgb(22, 21, 21);
-  text-align: left;
+/* Carda Sidenav */
+#carta {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(61, 38, 19);
+  margin: 10px auto;
 }
 
-.container-01,
-.container-02 {
+#carta .contenidos-carta{
+  height: 100%;
+  width: 85%;
+}
+
+.sidenav a {
+  display: block;
+  color: #fff;
+  padding: 20px 50px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease
+}
+
+.sidenav a:hover {
+  color: rgb(55, 0, 0);
+  background-color: salmon;
+  border-color: rgb(55, 0, 0);
+}
+
+
+.container-01 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -78,15 +98,7 @@ section {
   background-color: #ba544e;
   margin: 1.5%;
   padding: 1.5%;
-}
-
-.container-02>div {
-  width: 40%;
-  margin: 2.5%;
-  padding: 1.5%;
-  background-image: linear-gradient(to bottom,
-      #87372f,
-      rgba(204, 89, 35, 0.301));
+  border-radius: 10px;
 }
 
 .container-01 img {
@@ -175,7 +187,7 @@ header {
   color: white;
 }
 
-#icons:hover i{
+#icons:hover i {
   color: salmon;
   transition-property: all;
   transition-duration: 1s;
@@ -321,6 +333,18 @@ footer {
   a .fa-bars {
     display: inline;
   }
+
+  /* Carta sidenav */
+  #carta {
+    display: block;
+  }
+  .sidenav{
+    text-align: center;
+  }
+  #carta .contenidos-carta{
+    height: 100%;
+    width: 100%;
+  }
 }
 
 :root {
@@ -331,7 +355,8 @@ footer {
   from {
     filter: opacity(0%);
   }
+
   to {
-    filter: opacity(100%); 
+    filter: opacity(100%);
   }
 }
