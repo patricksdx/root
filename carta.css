@@ -101,7 +101,6 @@ a .fa-bars {
   background-position: 50% 60%;
   width: 100%;
   overflow: hidden;
-  margin: 0px auto 10px;
   animation: animation-intro 1s ease;
 }
 
@@ -137,7 +136,7 @@ a .fa-bars {
 #carta {
   display: flex;
   flex-direction: row;
-  background-color: #0E2046;
+  background-color: #ffffff;
   margin: 10px auto;
 }
 
@@ -147,6 +146,7 @@ a .fa-bars {
 
 .sidenav a {
   display: block;
+  background-color: #0E2046;
   color: #fff;
   padding: 25px 60px;
   transition-property: all;
@@ -356,9 +356,17 @@ a.boton:hover {
   .sidenav{
     text-align: center;
   }
+  section {
+    margin: 10px 0px;
+  }
   #carta .contenidos-carta{
     height: 100%;
     width: 100%;
+  }
+
+  /* FOOTER */
+  .texto-footer{
+    padding: 0px 15px;
   }
 }
 
