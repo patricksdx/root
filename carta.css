@@ -13,12 +13,17 @@ main {
 
 /* BARRA DE NAVEGACION */
 header {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 9999;
+}
+
+#header {
   width: 80%;
   height: 60px;
-  margin: 10px auto 0px;
-  background-color: rgba(255, 255, 255);
   display: flex;
-  position: sticky;
+  margin: 0 auto;
   top: 0;
   align-items: center;
   justify-content: center;
@@ -28,6 +33,7 @@ header {
   margin: auto auto auto 20px;
   width: 50%;
 }
+
 #logo a {
   color: #0E2046;
   font-family: LeelawUI;
@@ -71,31 +77,31 @@ a .fa-bars {
   display: none;
 }
 
-#icons .fa-bars:hover{
-  color: #D85F11;
-  transition-property: all;
-  transition-duration: 1s;
-  transition-timing-function: ease;
-}
-#icons .fa-cart-shopping:hover{
+#icons .fa-bars:hover {
   color: #D85F11;
   transition-property: all;
   transition-duration: 1s;
   transition-timing-function: ease;
 }
 
+#icons .fa-cart-shopping:hover {
+  color: #D85F11;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
 
 /* BANNER */
 
 #intro {
   display: flex;
   justify-content: flex-start;
-  background-image: url(./images/pexels-rachel-claire-5865282-main.jpg);
+  background-image: url(./images/Banner.png);
   background-repeat: repeat;
-  background-position: left;
+  background-position: 50% 60%;
   width: 100%;
   overflow: hidden;
-  margin: 10px auto;
+  margin: 0px auto 10px;
   animation: animation-intro 1s ease;
 }
 
@@ -112,27 +118,20 @@ a .fa-bars {
   font-size: 4em;
   font-family: LeelawUI;
   text-align: left;
-  margin: 150px 0px 25px 0px
+  margin: 40% 0px 25px 100px;
+  text-shadow: 5px 5px 5px rgb(22, 21, 21);
 }
 
 #intro p {
   text-shadow: 5px 5px 5px rgb(22, 21, 21);
   text-align: left;
+  margin: 0px 0px 0px 100px;
 }
 
-
-
-h3 {
-  color: rgb(255, 255, 255);
-  font-size: 1.5em;
+#intro a {
+  margin: 20px 0px 0px 100px;
 }
 
-section {
-  overflow: hidden;
-  background-color: #ff7f68;
-  padding: 5%;
-  text-align: center;
-}
 
 /* Carta Sidenav */
 #carta {
@@ -160,6 +159,18 @@ section {
   background-color: rgb(255, 255, 255);
 }
 
+
+h3 {
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+}
+
+section {
+  overflow: hidden;
+  background-color: #ff7f68;
+  padding: 5%;
+  text-align: center;
+}
 
 .container-01 {
   display: flex;
@@ -259,14 +270,10 @@ a.boton:hover {
 /* MEDIA QUERIES - MOBILE */
 @media screen and (max-width: 768px) {
 
-  header,
+  #header,
   main,
   footer {
     width: 100%;
-  }
-
-  header {
-    margin: 10px 0px 0px;
   }
 
   .container-01>div,
@@ -294,22 +301,27 @@ a.boton:hover {
   }
 
   #intro {
-    background-position: bottom;
+    background-position: 65% 75%;
   }
 
   #intro div {
     width: 100%;
-    padding-top: 275px;
+    padding-top: 235px;
     text-align: center;
   }
 
   #intro h1 {
     text-align: center;
-    margin: 80px 0px 25px 0px;
+    margin: 35% auto 40px;
   }
 
   #intro p {
     text-align: center;
+    margin: auto;
+  }
+
+  #intro a {
+    margin: 15px auto;
   }
 
   #icons {
