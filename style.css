@@ -97,8 +97,7 @@ a .fa-bars {
   display: flex;
   justify-content: flex-start;
   background-image: url(./images/Banner.png);
-  background-repeat: repeat;
-  background-position: 50% 60%;
+  background-repeat: no-repeat;
   width: 100%;
   overflow: hidden;
   animation: animation-intro 1s ease;
@@ -125,18 +124,27 @@ a .fa-bars {
   text-shadow: 5px 5px 5px rgb(22, 21, 21);
   text-align: left;
   margin: 0px 0px 0px 100px;
+  color: #fff;
 }
 
 #intro a {
   margin: 20px 0px 0px 100px;
 }
 
-
+/* TITULOS SECTION */
 
 h3 {
-  color: rgb(255, 255, 255);
-  font-size: 1.5em;
+  color: #0E2046;
+  font-size: 1.8em;
+  margin: 20px 0px;
+  font-family: "Pathway Extreme", sans-serif;
 }
+
+h2 {
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+/* SECTION NOSOTROS */
 
 section {
   width: 90%;
@@ -144,7 +152,6 @@ section {
   overflow: hidden;
   margin: 10px auto;
   padding: 5%;
-  background-color: rgba(61, 38, 19, 0.8);
   text-align: center;
 }
 
@@ -156,36 +163,40 @@ section {
   justify-content: center;
 }
 
-.container-01>div {
-  width: 24%;
-  background-color: #ba544e;
-  margin: 1.5%;
-  padding: 1.5%;
-}
-
 .container-02>div {
-  width: 40%;
+  width: 30%;
   margin: 2.5%;
   padding: 1.5%;
-  background-image: linear-gradient(to bottom,
-      #87372f,
-      rgba(204, 89, 35, 0.301));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-02 p {
+  color: rgb(0, 0, 0);
+}
+.container-02 img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* SECCION PLATOS */
+
+.container-01>div {
+  width: 24%;
+  background-color: #ffffff;
+  margin: 1.5%;
+  padding: 1.5%;
 }
 
 .container-01 img {
   width: 90%;
   border-radius: 20px;
-  box-shadow: 5px 5px 8px #00000085;
   margin: 16px 0px;
-}
-
-h2 {
-  color: rgb(255, 255, 255);
 }
 
 p {
   font-size: 1rem;
-  color: rgb(255, 255, 255);
   font-family: "Pathway Extreme", sans-serif;
   font-weight: 200;
   text-align: left;
