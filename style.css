@@ -98,6 +98,7 @@ a .fa-bars {
   justify-content: flex-start;
   background-image: url(./images/Banner.png);
   background-repeat: no-repeat;
+  background-position: 20% 70%;
   width: 100%;
   overflow: hidden;
   animation: animation-intro 1s ease;
@@ -207,13 +208,6 @@ p {
 .container-01 a {
   filter: none;
 }
-
-.container-01 a:hover img {
-  filter: sepia(100%);
-  transform: scale(1.2);
-  position: relative;
-}
-
 
 /* footer */
 .texto-footer {
