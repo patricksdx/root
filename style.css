@@ -34,11 +34,8 @@ header {
   width: 50%;
 }
 
-#logo a {
-  color: #0E2046;
-  font-family: LeelawUI;
-  font-size: 1.25em;
-  font-weight: bold;
+#logo img {
+  height: 60px;
 }
 
 .topnav1 {
@@ -151,7 +148,7 @@ section {
   width: 90%;
   height: 100%;
   overflow: hidden;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 5%;
   text-align: center;
 }
@@ -210,8 +207,9 @@ p {
 
 /* footer */
 footer {
-  width: 100%;
+  width: 90%;
   display: flex;
+  padding: 5% 5% 0px;
   margin: 50px auto;
   justify-content: center;
 }
@@ -227,13 +225,20 @@ footer {
 #llamanos {
   width: 33%;
 }
+
+.horarios {
+  margin: 20px 0px;
+}
+
 #platos-servicios{
   width: 33%;
   display: flex;
+  justify-content: end;
 }
 #platos-servicios div {
   flex-direction: column;
   display: flex;
+  margin: 0px 50px;
 }
 
 footer h4 {
@@ -244,7 +249,8 @@ footer h4 {
 
 footer a {
   color: #0E2046;
-  font-size: 1.5em  ;
+  font-size: 1.5em;
+  margin: 10px 0px ;
 }
 footer p {
   text-align: justify;
@@ -288,8 +294,7 @@ a.boton:hover {
 @media screen and (max-width: 768px) {
 
   #header,
-  main,
-  footer {
+  main{
     width: 100%;
   }
 
@@ -368,8 +373,18 @@ a.boton:hover {
   }
 
   /* FOOTER */
-  .texto-footer{
-    padding: 0px 15px;
+  footer {
+    width: 100%;
+    display: block;
+    padding: 0px;
+  }
+  #velero, #llamanos, #platos-servicios{
+    width: 100%;
+    margin: 25px 0px 15%;
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
   }
 }
 
