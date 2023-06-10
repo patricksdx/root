@@ -101,7 +101,6 @@ a .fa-bars {
   background-position: 50% 60%;
   width: 100%;
   overflow: hidden;
-  margin: 0px auto 10px;
   animation: animation-intro 1s ease;
 }
 
@@ -333,6 +332,11 @@ a.boton:hover {
 
   a .fa-bars {
     display: inline;
+  }
+
+  /* FOOTER */
+  .texto-footer{
+    padding: 0px 15px;
   }
 }
 
