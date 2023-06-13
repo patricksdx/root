@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Responsive website - Home</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@200&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/c888b7b310.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+  function menu() {
+    var x = document.querySelector(".topnav1");
+    if (x.className === "topnav1") {
+      x.className += " topnav2";
+    } else {
+      x.className = "topnav1";
+    }
+  }
+</script>
+
+<body>
+  <header>
+    <div id="header">
+      <div id="logo">
+        <a href="./index.html">
+          <img src="./images/Logo.jpg" alt="">
+        </a>
+      </div>
+      <div id="icons">
+        <a href="javascript:void(0)" onclick="menu()">
+          <i class="fa-solid fa-bars"></i>
+        </a>
+        <a href="javascript:void(0)s">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </div>
+      <nav class="topnav1">
+        <a href="carta.html">Carta</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="intro">
+    <div>
+      <h1>El Velero</h1>
+      <p>
+        ¡Ven y disfruta del exquisito Chicharrón de Pescado y descubre la combinación perfecta de crujiente por fuera y
+        jugoso por dentro. 🍽⛵😉
+      </p>
+      <a href="index.html" class="boton">Ir al inicio</a>
+    </div>
+  </div>
+
+  <main>
+
+    <section>
+      <h3>Nuestros Servicios</h3>
+      <div class="container-01">
+        <div id="sevicios">
+          <h2>Comida a domicilio</h2>
+          <a href="#">
+            <img src="./images/Repartidor.png" />
+          </a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum
+            dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing orem ipsum
+            dolor sit amet consectetur adipisicing elit. elit.Lorem ipsum dolor sit amet consectetur adipisicing orem ipsum
+            dolor sit amet consectetur adipisicing elit. elit.
+          </p>
+        </div>
+        <div>
+          <h2>En el restaurante</h2>
+          <img src="./images/Restaurante.jpg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing orem ipsum
+            dolor sit amet consectetur adipisicing elit. elit.Lorem ipsum dolor sit amet consectetur adipisicing orem ipsum
+            dolor sit amet consectetur adipisicing elit. elit.Lorem ipsum dolor sit amet consectetur adipisicing orem ipsum
+            dolor sit amet consectetur adipisicing elit. elit.
+          </p>
+        </div>
+        <div>
+          <h2>Reservas</h2>
+          <img src="./images/Reserva.jpeg" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing orem ipsum
+            dolor sit amet consectetur adipisicing elit. elit.Lorem ipsum dolor sit amet consectetur adipisicing orem ipsum
+            dolor sit amet consectetur adipisicing elit. elit.Lorem ipsum dolor sit amet consectetur adipisicing orem ipsum
+            dolor sit amet consectetur adipisicing elit. elit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  <div class="fijo">
+    <a href="carta.html" class="boton">Ir a carta</a>
+  </div>
+
+  <footer>
+    <div id="velero">
+      <img src="./images/El Velero.jpg">
+    </div>
+    <div id="llamanos">
+      <div>
+        <h4>Llamanos</h4>
+        <a href="https://api.whatsapp.com/send?phone=51999888777&text=Contactenos%20a%20la%20cevicheria"
+          target="_blank">+51 999 888 777</a>
+      </div>
+      <div class="horarios">
+        <p>Lunes a Viernes: 10am - 5pm</p>
+        <p>Sabado y Domingo: 10am - 3pm</p>
+      </div>
+      <div>
+        <a href="">Redes sociales</a>
+      </div>
+    </div>
+    <div id="platos-servicios">
+      <div>
+        <h4>Nuestros Platos</h4>
+        <a href="./carta.html#carta-ceviches">Ceviches</a>
+        <a href="./carta.html#carta-parihuelas">Parihuelas</a>
+        <a href="./carta.html#carta-arroces">Arroces</a>
+        <a href="./carta.html#carta-chicharrones">Chicharones</a>
+        <a href="./carta.html#carta-jaleas">Jaleas</a>
+        <a href="./carta.html#carta-sopas">Sopas</a>
+        <a href="./carta.html#carta-sudados">Sudados</a>
+        <a href="./carta.html#carta-oriental">Oriental</a>
+      </div>
+      <div>
+        <h4>Sevicios</h4>
+        <a href="#sevicios">Comida a domicilio</a>
+        <a href="#servicios">En el restaurante</a>
+        <a href="#servicios">Reservas</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
