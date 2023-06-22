@@ -175,6 +175,7 @@ section {
   color: rgb(0, 0, 0);
   text-align: start;
 }
+
 ol {
   text-align: start;
   margin-top: 5px;
@@ -220,40 +221,108 @@ p {
   margin: 20px 0px;
 }
 
-#container-01 div{
+#container-01 div {
   box-shadow: none;
 }
 
-/* footer */
-footer {
-  width: 90%;
-  display: flex;
-  padding: 5% 5% 0px;
+/* Video y audio */
+video {
+  width: 80%;
   margin: 50px auto;
-  justify-content: center;
 }
 
-#velero {
-  width: 33%;
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
-#velero img {
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
 
+/* MAPA DEL NOSOTROS */
+.map-responsive {
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+}
+
+.map-responsive iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* FORMULARIO */
+
+#contacto {
+  margin: 100px 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label,
+input,
+textarea,
+select {
+  padding: 1%;
+  width: 50%;
+  margin: 10px;
+  font-size: 1em;
+  font-family: "Pathway Extreme", sans-serif;
+}
+
+textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+/* footer */
+footer {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto 50px;
+}
+
+#velero {
+  width: 25%;
+}
+
+#redes-sociales {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+}
+
 #llamanos {
-  width: 33%;
+  width: 25%;
 }
 
 .horarios {
   margin: 20px 0px;
 }
 
-#platos-servicios{
-  width: 33%;
+#platos-servicios {
+  width: 35%;
   display: flex;
   justify-content: end;
 }
+
 #platos-servicios div {
   flex-direction: column;
   display: flex;
@@ -268,11 +337,13 @@ footer h4 {
 
 footer a {
   color: #0E2046;
-  font-size: 1.5em;
-  margin: 10px 0px ;
+  font-size: 1em;
+  margin: 5px 0px;
 }
+
 footer p {
   text-align: justify;
+  font-family: LeelawUI;
 }
 
 /* FIJO */
@@ -313,7 +384,7 @@ a.boton:hover {
 @media screen and (max-width: 768px) {
 
   #header,
-  main{
+  main {
     width: 100%;
   }
 
@@ -329,8 +400,7 @@ a.boton:hover {
   }
 
   h3 {
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 2rem
   }
 
   p {
@@ -391,18 +461,37 @@ a.boton:hover {
     display: inline;
   }
 
+  /* FORMS */
+  #contacto {
+    margin: 50px 0px
+  }
+
+  label,
+  input,
+  textarea {
+    width: 90%;
+  }
+
   /* FOOTER */
   footer {
     width: 100%;
     display: block;
     padding: 0px;
   }
-  #velero, #llamanos, #platos-servicios{
+
+  footer #velero {
+    display: none;
+  }
+
+  #velero,
+  #llamanos,
+  #platos-servicios {
     width: 100%;
-    margin: 25px 0px 15%;
+    margin: 10px 0px 20px;
     text-align: center;
     justify-content: center;
   }
+
   footer p {
     text-align: center;
   }

@@ -14,7 +14,7 @@
 
 <script>
   function menu() {
-    var x = document.querySelector(".topnav1");
+    xvar = document.querySelector(".topnav1");
     if (x.className === "topnav1") {
       x.className += " topnav2";
     } else {
@@ -50,11 +50,7 @@
 
   <div id="intro">
     <div>
-      <h1>El Velero</h1>
-      <p>
-        ¡Ven y disfruta del exquisito Chicharrón de Pescado y descubre la combinación perfecta de crujiente por fuera y jugoso por dentro. 🍽⛵😉
-      </p>
-      <a href="index.html" class="boton" id="boton-inicio">Ir al inicio</a>
+      <h1>Carta</h1>
     </div>
   </div>
 
@@ -361,7 +357,14 @@
 
   <footer>
     <div id="velero">
-      <img src="./images/El Velero.jpg">
+      <div id="redes-sociales">
+        <a href="#"> <i class="fa-brands fa-facebook"></i> Facabook</a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+      </div>
+      <p>
+        &copy; 2023. El Viejo Velero.
+      </p>
     </div>
     <div id="llamanos">
       <div>
@@ -372,9 +375,6 @@
       <div class="horarios">
         <p>Lunes a Viernes: 10am - 5pm</p>
         <p>Sabado y Domingo: 10am - 3pm</p>
-      </div>
-      <div>
-        <a href="">Redes sociales</a>
       </div>
     </div>
     <div id="platos-servicios">

@@ -50,26 +50,26 @@
 
   <div id="intro">
     <div>
-      <h1>El Velero</h1>
-      <p>
-        ¡Ven y disfruta del exquisito Chicharrón de Pescado y descubre la combinación perfecta de crujiente por fuera y
-        jugoso por dentro. 🍽⛵😉
-      </p>
-      <a href="index.html" class="boton">Ir al inicio</a>
+      <h1>Contacto</h1>
     </div>
   </div>
 
   <main>
     <section id="contacto">
       <h3>Contactanos:</h3>
-      <form action="/enviar.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-        <input type="submit" value="Enviar">
+      <form action="action_page.php" method="get">
+        <label for="nombres-apellidos">Nombres y Apellidos</label>
+        <input id="nombre-apellidos" placeholder="Escribe tu nombre y apellido" type="text" required>
+        <label for="escoge-platos">Escoge tu plato favorito</label>
+        <select id="escoge-platos">
+          <option value="ceviche">Ceviche</option>
+          <option value="parihuela">Parihuelas</option>
+          <option value="sudados">Sudado</option>
+          <option value="oriental">Oriental</option>
+        </select>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" placeholder="Escribe tu comentario (Menos de 500 caracteres)" required></textarea>
+        <input type="submit" name="Enviar">
       </form>
     </section>
   </main>
@@ -80,7 +80,14 @@
 
   <footer>
     <div id="velero">
-      <img src="./images/El Velero.jpg">
+      <div id="redes-sociales">
+        <a href="#"> <i class="fa-brands fa-facebook"></i> Facabook</a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i> Twitter</a>
+      </div>
+      <p>
+        &copy; 2023. El Viejo Velero.
+      </p>
     </div>
     <div id="llamanos">
       <div>
@@ -91,9 +98,6 @@
       <div class="horarios">
         <p>Lunes a Viernes: 10am - 5pm</p>
         <p>Sabado y Domingo: 10am - 3pm</p>
-      </div>
-      <div>
-        <a href="">Redes sociales</a>
       </div>
     </div>
     <div id="platos-servicios">
