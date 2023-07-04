@@ -55,7 +55,7 @@
         ¡Ven y disfruta del exquisito Chicharrón de Pescado y descubre la combinación perfecta de crujiente por fuera y
         jugoso por dentro. 🍽⛵😉
       </p>
-      <a href="index.html" class="boton">Ir al inicio</a>
+      <a href="index.html" class="boton">Adopta Ya!</a>
     </div>
   </div>
 
@@ -282,7 +282,29 @@
       </div>
     </div>
   </footer>
-
+s
 </body>
+
+<script>
+  // Array de imágenes de fondo
+  var imagenesFondo = ['./images/Banner.png', './images/Arroz con mariscos.png', './images/ceviche.png'];
+  var index = 0;
+
+  function cambiarFondo() {
+    // Cambiar el fondo de pantalla
+    document.getElementById('intro').style.backgroundImage = "url('" + imagenesFondo[index] + "')";
+
+    // Incrementar el índice
+    index++;
+
+    // Si alcanza el final del array, volver al inicio
+    if (index === imagenesFondo.length) {
+      index = 0;
+    }
+  }
+
+  // Llamar a la función cada 5 segundos (5000 milisegundos)
+  setInterval(cambiarFondo, 3000);
+</script>
 
 </html>

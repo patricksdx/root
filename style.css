@@ -129,6 +129,78 @@ a .fa-bars {
   margin: 20px 0px 0px 100px;
 }
 
+
+/* Carta Sidenav */
+#carta {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+  margin: 10px auto;
+}
+
+#carta .contenidos-carta{
+  height: 100%;
+}
+
+.sidenav a {
+  display: block;
+  background-color: #0E2046;
+  color: #fff;
+  padding: 25px 60px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease
+}
+
+.sidenav a:hover {
+  color: #0E2046;
+  background-color: rgb(255, 255, 255);
+}
+
+/* PLATOS */
+
+section {
+  overflow: hidden;
+  padding: 5%;
+  text-align: center;
+}
+
+.container-01 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-01>div {
+  width: 24%;
+  margin: 1.5%;
+  padding: 1.5%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.container-01 img {
+  width: 90%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 8px #00000085;
+  margin: 16px 0px;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Pathway Extreme", sans-serif;
+  font-weight: 200;
+  text-align: left;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.container-01 a {
+  filter: none;
+}
+
+
 /* TITULOS SECTION */
 
 h3 {
@@ -461,6 +533,21 @@ a.boton:hover {
     display: inline;
   }
 
+    /* Carta sidenav */
+  #carta {
+    display: block;
+  }
+  .sidenav{
+    text-align: center;
+  }
+  section {
+    margin: 10px 0px;
+  }
+  #carta .contenidos-carta{
+    height: 100%;
+    width: 100%;
+  }
+  
   /* FORMS */
   #contacto {
     margin: 50px 0px
@@ -483,7 +570,7 @@ a.boton:hover {
   #llamanos,
   #platos-servicios {
     width: 100%;
-    margin: 10px 0px 20px;
+    padding: 10px 0px 20px;
     text-align: center;
     justify-content: center;
   }
